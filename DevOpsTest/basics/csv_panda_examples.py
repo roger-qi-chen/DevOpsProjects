@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pandas import DataFrame
 
-
 def csv_reader_read_file(filename: str):
     with open(filename) as f:
         csv_file = csv.reader(f, delimiter=',')
@@ -27,8 +26,8 @@ def compare_trend(stocks: dict):
 
 
 if __name__ == '__main__':
-    csv_reader_read_file("AAPL.csv")
-    appl = pandas_read_file("AAPL.csv")
-    team = pandas_read_file("TEAM.csv")
+    csv_reader_read_file("csv_files/AAPL.csv")
+    appl = pandas_read_file("csv_files/AAPL.csv")
+    team = pandas_read_file("csv_files/TEAM.csv")
     compare_trend(stocks={"APPL": appl, "TEAM": team})
 
