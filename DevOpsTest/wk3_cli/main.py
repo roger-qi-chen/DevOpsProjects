@@ -1,9 +1,9 @@
 import importlib
 import pkgutil
 
-from cli.cligroup import cli
+from wk3_cli.cligroup import cli
 from click_repl import register_repl
-from cli import commands
+from wk3_cli import commands
 
 
 def _load_command_modules(parent_module):

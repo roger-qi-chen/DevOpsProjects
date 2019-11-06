@@ -1,4 +1,4 @@
-from cli.cligroup import cli
+from wk3_cli.cligroup import cli
 
 
 @cli.group(name='creds')

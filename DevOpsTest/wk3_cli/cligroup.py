@@ -4,7 +4,7 @@ from click import Context
 from click.decorators import pass_context
 from click.globals import get_current_context
 
-from cli.log_config import get_log_config
+from wk3_cli.log_config import get_log_config
 
 _CLI_CONTEXT_KEY = '__cli_context'
 
