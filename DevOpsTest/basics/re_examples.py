@@ -1,5 +1,9 @@
 import re
 
+# Useful sites:
+# 1. Regular expression generator: https://txt2re.com/
+# 2. Regular expression tester: https://regex101.com/
+
 print(re.match('baidu', 'www.baidu.com'))
 
 line = "Cats are smarter than dogs"
