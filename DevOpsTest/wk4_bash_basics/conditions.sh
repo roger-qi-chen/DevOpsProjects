@@ -53,3 +53,4 @@ fi
 if [ -n $var ]; then
     echo $var is again and again a non-empty string
 fi
+
