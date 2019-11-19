@@ -1,7 +1,5 @@
 import unittest
 
-import flask
-
 from .calculator import Calculator
 
 
