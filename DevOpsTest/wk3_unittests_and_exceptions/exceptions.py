@@ -9,7 +9,7 @@ class MyError(Exception):
         return f'age cannot be an negative number, your input is {self.age}'
 
 
-def example():
+def enter_your_age():
     age = int(input('Please enter your age:'))
     try:
         if age < 0:
@@ -31,6 +31,18 @@ def try_catch():
         print("No matter what, execute this")
 
 
+def file_not_found():
+    try:
+        with open('file.log') as file:
+            read_data = file.read()
+    except FileNotFoundError as fnf_error:
+        print(fnf_error)
+
+
 if __name__ == '__main__':
     try_catch()
-    example()
+    file_not_found()
+    enter_your_age()
+
+    import sys
+    assert ('linux' in sys.platform), "This code runs on Linux only."
